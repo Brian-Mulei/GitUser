@@ -61,8 +61,11 @@ developerList= new ArrayList<>();
                             JSONArray array = jsonObject.getJSONArray("items");
                             for (int i = 0; i < array.length(); i++) {
                                 JSONObject jo = array.getJSONObject(i);
-                                DeveloperList developers = new DeveloperList(jo.getString("login"),
-                                        jo.getString("html_url"), jo.getString("avatar_url"));
+                                DeveloperList developers = new DeveloperList(
+                                        jo.getString("login"),
+                                        jo.getString("html_url"),
+                                        jo.getString("avatar_url")
+                                );
                                 developerList.add(developers);
                                 Log.d("res","developers"+ developers);
                             }

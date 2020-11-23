@@ -6,7 +6,7 @@ public class DeveloperList {
     private String avatar_url;
     private String html_url;
 
-    public DeveloperList(String login,String avatar_url,String html_url){
+    public DeveloperList(String login,String html_url,String avatar_url){
         this.login=login;
         this.avatar_url=avatar_url;
         this.html_url=html_url;
